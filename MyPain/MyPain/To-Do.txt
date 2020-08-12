@@ -1,4 +1,6 @@
-﻿- Add so user can change name on file
+﻿- Add functionality to pencilBtn
+
+- Add so user can change name on file
 	* Maybe do so user can change file location
 
 - Probably look into gettin a bigger brush

@@ -15,24 +15,29 @@
         <CommandBinding Command="Paste" CanExecute="CommonCommandBinding_CanExecute" />
     </Window.CommandBindings>
     <DockPanel>
-        <ToolBarTray DockPanel.Dock="Top" >
-            <ToolBar>
+        <ToolBarTray DockPanel.Dock="Top" IsLocked="True" >
+            <ToolBar >
                 <Button Command="New" Content="New"/>
                 <Button Command="Open" Content="Open"/>
                 <Button x:Name="saveBtn" Command="Save" ToolTip="Save file" >
-                    <Image Source="C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\Pictures\FloppyDisk.png" Width="25"/>
+                    <Image Source="Pictures\FloppyDisk.png" Width="25"/>
                 </Button>
             </ToolBar>
             <!--These work as intended?-->
             <ToolBar>
                 <Button x:Name="cutBtn" Command="Cut" ToolTip="Cut to clipboard" >
-                    <Image Source="C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\Pictures\Scissors.png" Width="25"/>
+                    <Image Source="Pictures\Scissors.png" Width="25"/>
                 </Button>
                 <Button x:Name="copyBtn" Command="Copy" ToolTip="Copy to clipboard">
-                    <Image Source="C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\Pictures\Papers.png" Width="25"/>
+                    <Image Source="Pictures\Papers.png" Width="25"/>
                 </Button>
                 <Button x:Name="pasteBtn" Command="Paste" ToolTip="Paste from clipboard">
-                    <Image Source="C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\Pictures\Clipboard.png" Width="25"/>
+                    <Image Source="Pictures\Clipboard.png" Width="25"/>
+                </Button>
+            </ToolBar>
+            <ToolBar>
+                <Button x:Name="pencilBtn" ToolTip="Pencil">
+                    <Image Source="Pictures\Pencil.png" Width="25"/>
                 </Button>
             </ToolBar>
         </ToolBarTray>
