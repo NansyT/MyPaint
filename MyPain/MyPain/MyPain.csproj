@@ -96,7 +96,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="To-Do.txt" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Clipboard.png" />
     <Resource Include="Pictures\FloppyDisk.png" />

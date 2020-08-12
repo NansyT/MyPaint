@@ -8,11 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/clipboard.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/floppydisk.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/papers.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/pencil.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/rotate.png")]
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/scissors.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("to-do.txt")]
 
 

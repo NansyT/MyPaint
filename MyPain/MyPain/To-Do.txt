@@ -1,0 +1,61 @@
+﻿- Add so user can change name on file
+	* Maybe do so user can change file location
+
+- Probably look into gettin a bigger brush
+
+- NEED MORE COLOURS!
+
+- Make a select/marking feature
+
+- Make the cut feature
+
+- Make the copy feature
+
+- Make the paste feature
+
+- Do so users can make new file
+
+- Reevaluate my life choices
+
+- Maybe add open file feature
+
+- Add some other interesting shit for this program
+
+- Maybe add shapes
+	* Circle
+	* Rectangle
+	* Triangle
+
+- MAKE THE FUCKING LOGO!!
+
+- Probably need to straighten up my code
+	* It could probs do with some refacturing
+
+- Different brushes???
+
+- What The Frick else can I put in this
+
+- Do so canvas can change size
+	* In a good way
+
+- Merge test into Master so To-Do list is there
+
+- Make the rotate feature
+
+- Contemplate the need for icons for New and Open file
+
+- Possibly add a fill feature?
+
+- Need to make the save message box look decent
+
+- Add option to save file as jpeg?
+
+- Look into making the background transparent
+
+- ADD AN ERASER (WHY DID I ONLY REMEMBER THIS NOW???)
+
+- Sounds?
+
+- Add resize feature?????
+
+- Maybe support more file types?
