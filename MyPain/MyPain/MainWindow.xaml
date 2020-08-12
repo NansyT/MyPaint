@@ -5,25 +5,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyPain"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="My Pain" Height="450" Width="800" >
     <Window.CommandBindings>
         <CommandBinding Command="New" CanExecute="CommonCommandBinding_CanExecute" />
         <CommandBinding Command="Open" CanExecute="CommonCommandBinding_CanExecute" />
-        <CommandBinding Command="Save" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding Command="Save" CanExecute="CommonCommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+        <CommandBinding Command="Cut" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding Command="Copy" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding Command="Paste" CanExecute="CommonCommandBinding_CanExecute" />
     </Window.CommandBindings>
     <DockPanel>
         <ToolBarTray DockPanel.Dock="Top" >
             <ToolBar>
                 <Button Command="New" Content="New"/>
                 <Button Command="Open" Content="Open"/>
-                <Button Command="Save" Content="Save"/>
+                <Button x:Name="saveBtn" Command="Save" ToolTip="Save file" >
+                    <Image Source="C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\Pictures\FloppyDisk.png" Width="25"/>
+                </Button>
             </ToolBar>
+            <!--These work as intended?-->
             <ToolBar>
-                <Button Command="Cut" Content="Cut"/>
-                <Button Command="Copy" Content="Copy"/>
-                <Button Command="Paste" Content="Paste"/>
+                <Button x:Name="cutBtn" Command="Cut" ToolTip="Cut to clipboard" >
+                    <Image Source="C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\Pictures\Scissors.png" Width="25"/>
+                </Button>
+                <Button x:Name="copyBtn" Command="Copy" ToolTip="Copy to clipboard">
+                    <Image Source="C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\Pictures\Papers.png" Width="25"/>
+                </Button>
+                <Button x:Name="pasteBtn" Command="Paste" ToolTip="Paste from clipboard">
+                    <Image Source="C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\Pictures\Clipboard.png" Width="25"/>
+                </Button>
             </ToolBar>
         </ToolBarTray>
-        <TextBox AcceptsReturn="True"/>
+        <Canvas x:Name="paintArea" MouseDown="PaintArea_MouseDown" MouseMove="PaintArea_MouseMove" Background="White" Width="790" Height="385" >
+        </Canvas>
     </DockPanel>
 </Window>
