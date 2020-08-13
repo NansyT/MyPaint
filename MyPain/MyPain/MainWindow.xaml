@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyPain"
         mc:Ignorable="d"
-        Title="My Pain" Height="450" Width="800" >
+        Title="My Pain" Height="450" Width="800">
     <Window.CommandBindings>
         <CommandBinding Command="New" CanExecute="CommonCommandBinding_CanExecute" />
         <CommandBinding Command="Open" CanExecute="CommonCommandBinding_CanExecute" />
@@ -36,15 +36,14 @@
                 </Button>
             </ToolBar>
             <ToolBar>
-                <Button x:Name="pencilBtn" ToolTip="Pencil" >
+                <Button x:Name="pencilBtn" ToolTip="Pencil" Click="pencilBtn_Click" >
                     <Image Source="Pictures\Pencil.png" Width="25"/>
                 </Button>
-                <Button x:Name="eraserBtn" ToolTip="Eraser" >
+                <Button x:Name="eraserBtn" ToolTip="Eraser" Click="eraserBtn_Click">
                     <Image Source="Pictures\Eraser.png" Width="25"/>
                 </Button>
             </ToolBar>
         </ToolBarTray>
-        <Canvas x:Name="paintArea" MouseDown="PaintArea_MouseDown" MouseMove="PaintArea_MouseMove" Background="Transparent" Width="790" Height="385" >
-        </Canvas>
+        <InkCanvas x:Name="paintArea" Background="Transparent" Width="790" Height="385" />
     </DockPanel>
 </Window>

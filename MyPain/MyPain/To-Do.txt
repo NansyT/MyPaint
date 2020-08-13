@@ -1,9 +1,12 @@
-﻿- Add functionality to pencilBtn
+﻿X Add functionality to pencilBtn
 
 - Add so user can change name on file
 	* Maybe do so user can change file location
 
 - Probably look into gettin a bigger brush
+	* Maybe do so brush paints many small circles as a line?
+
+- More brush sizes
 
 - NEED MORE COLOURS!
 
@@ -40,7 +43,7 @@
 - Do so canvas can change size
 	* In a good way
 
-- Merge test into Master so To-Do list is there
+X Merge test into Master so To-Do list is there
 
 - Make the rotate feature
 
@@ -54,9 +57,7 @@
 
 X Look into making the background transparent
 
-- ADD AN ERASER (WHY DID I ONLY REMEMBER THIS NOW???)
-	* Mayby brush that paints white?? Or transparent... (if that how it works)
-	** Transparent it is!
+X ADD AN ERASER (WHY DID I ONLY REMEMBER THIS NOW???)
  
 - Sounds?
 

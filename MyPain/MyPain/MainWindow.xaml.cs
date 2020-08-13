@@ -20,11 +20,13 @@ namespace MyPain
     /// </summary>
     public partial class MainWindow : Window
     {
+        Brush brushColour = Brushes.Black;
         FileManager manager = new FileManager();
         Painter painter = new Painter();
         public MainWindow()
         {
             InitializeComponent();
+            paintArea.EditingMode = InkCanvasEditingMode.Ink;
 
         }
         private void CommonCommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
@@ -32,20 +34,22 @@ namespace MyPain
             e.CanExecute = true;
         }
 
-        private void PaintArea_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            painter.GetBrushLocation(paintArea, e);
-        }
-
-        private void PaintArea_MouseMove(object sender, MouseEventArgs e)
-        {
-            paintArea.Children.Add(painter.DrawThinLine(paintArea, e));
-        }
+        
 
         private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         {
             manager.SaveFile(paintArea, @"C:\Users\nann8059\Desktop\MyPain Pics\newImage.png");
             MessageBox.Show("Saved file");
+        }
+
+        private void pencilBtn_Click(object sender, RoutedEventArgs e)
+        {
+            paintArea.EditingMode = InkCanvasEditingMode.Ink;
+            
+        }
+        private void eraserBtn_Click(object sender, RoutedEventArgs e)
+        {
+            paintArea.EditingMode = InkCanvasEditingMode.EraseByPoint;
         }
     }
 }

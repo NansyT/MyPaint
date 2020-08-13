@@ -13,7 +13,7 @@ namespace MyPain
 {
     class FileManager
     {
-        public void SaveFile(Canvas paintArea, string filename)
+        public void SaveFile(InkCanvas paintArea, string filename)
         {
             RenderTargetBitmap renderBitmap = new RenderTargetBitmap(
              (int)paintArea.Width, (int)paintArea.Height,
