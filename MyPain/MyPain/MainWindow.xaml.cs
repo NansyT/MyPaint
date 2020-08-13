@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -20,21 +21,18 @@ namespace MyPain
     /// </summary>
     public partial class MainWindow : Window
     {
-        Brush brushColour = Brushes.Black;
         FileManager manager = new FileManager();
-        Painter painter = new Painter();
         public MainWindow()
         {
             InitializeComponent();
             paintArea.EditingMode = InkCanvasEditingMode.Ink;
-
+            brushColours.ItemsSource = typeof(Colors).GetProperties();
+            brushColours.SelectedIndex = 0;
         }
         private void CommonCommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
             e.CanExecute = true;
         }
-
-        
 
         private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
         {
@@ -42,14 +40,19 @@ namespace MyPain
             MessageBox.Show("Saved file");
         }
 
-        private void pencilBtn_Click(object sender, RoutedEventArgs e)
+        private void PencilBtn_Click(object sender, RoutedEventArgs e)
         {
             paintArea.EditingMode = InkCanvasEditingMode.Ink;
-            
         }
-        private void eraserBtn_Click(object sender, RoutedEventArgs e)
+        private void EraserBtn_Click(object sender, RoutedEventArgs e)
         {
             paintArea.EditingMode = InkCanvasEditingMode.EraseByPoint;
+        }
+
+        private void BrushColours_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Color selectedColour = (Color)(brushColours.SelectedItem as PropertyInfo).GetValue(null, null);
+            paintArea.DefaultDrawingAttributes.Color = selectedColour;
         }
     }
 }

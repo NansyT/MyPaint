@@ -27,3 +27,4 @@ C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\obj\Debug\MyPain.csproj
 C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\obj\Debug\MyPain.csproj.CoreCompileInputs.cache
 C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\obj\Debug\MyPain.exe
 C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\obj\Debug\MyPain.pdb
+C:\Users\nann8059\Documents\GitHub\MyPaint\MyPain\MyPain\obj\Debug\MyPain.csprojAssemblyReference.cache

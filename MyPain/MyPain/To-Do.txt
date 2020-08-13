@@ -3,12 +3,11 @@
 - Add so user can change name on file
 	* Maybe do so user can change file location
 
-- Probably look into gettin a bigger brush
-	* Maybe do so brush paints many small circles as a line?
-
 - More brush sizes
 
-- NEED MORE COLOURS!
+X NEED MORE COLOURS!
+
+- Another way to display colours
 
 - Make a select/marking feature
 
@@ -64,3 +63,5 @@ X ADD AN ERASER (WHY DID I ONLY REMEMBER THIS NOW???)
 - Add resize feature?????
 
 - Maybe support more file types?
+
+- Cry because I didn't use InkCanvas sooner...

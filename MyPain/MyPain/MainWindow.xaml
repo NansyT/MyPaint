@@ -36,12 +36,32 @@
                 </Button>
             </ToolBar>
             <ToolBar>
-                <Button x:Name="pencilBtn" ToolTip="Pencil" Click="pencilBtn_Click" >
+                <Button x:Name="pencilBtn" ToolTip="Pencil" Click="PencilBtn_Click" >
                     <Image Source="Pictures\Pencil.png" Width="25"/>
                 </Button>
-                <Button x:Name="eraserBtn" ToolTip="Eraser" Click="eraserBtn_Click">
+                <Button x:Name="eraserBtn" ToolTip="Eraser" Click="EraserBtn_Click">
                     <Image Source="Pictures\Eraser.png" Width="25"/>
                 </Button>
+                <ComboBox x:Name="brushColours" SelectionChanged="BrushColours_SelectionChanged">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Rectangle Fill="{Binding Name}" Width="16" Height="16"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+                <ComboBox>
+                    <ComboBoxItem>
+                        <TextBlock Text="Lille"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="Mellem"/>
+                    </ComboBoxItem>
+                    <ComboBoxItem>
+                        <TextBlock Text="Stor"/>
+                    </ComboBoxItem>
+                </ComboBox>
             </ToolBar>
         </ToolBarTray>
         <InkCanvas x:Name="paintArea" Background="Transparent" Width="790" Height="385" />
