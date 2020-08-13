@@ -52,10 +52,12 @@
 
 - Add option to save file as jpeg?
 
-- Look into making the background transparent
+X Look into making the background transparent
 
 - ADD AN ERASER (WHY DID I ONLY REMEMBER THIS NOW???)
-
+	* Mayby brush that paints white?? Or transparent... (if that how it works)
+	** Transparent it is!
+ 
 - Sounds?
 
 - Add resize feature?????

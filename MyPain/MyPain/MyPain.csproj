@@ -107,5 +107,8 @@
     <Resource Include="Pictures\Rotate.png" />
     <Resource Include="Pictures\Scissors.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Eraser.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

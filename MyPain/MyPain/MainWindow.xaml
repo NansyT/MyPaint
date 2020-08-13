@@ -36,12 +36,15 @@
                 </Button>
             </ToolBar>
             <ToolBar>
-                <Button x:Name="pencilBtn" ToolTip="Pencil">
+                <Button x:Name="pencilBtn" ToolTip="Pencil" >
                     <Image Source="Pictures\Pencil.png" Width="25"/>
+                </Button>
+                <Button x:Name="eraserBtn" ToolTip="Eraser" >
+                    <Image Source="Pictures\Eraser.png" Width="25"/>
                 </Button>
             </ToolBar>
         </ToolBarTray>
-        <Canvas x:Name="paintArea" MouseDown="PaintArea_MouseDown" MouseMove="PaintArea_MouseMove" Background="White" Width="790" Height="385" >
+        <Canvas x:Name="paintArea" MouseDown="PaintArea_MouseDown" MouseMove="PaintArea_MouseMove" Background="Transparent" Width="790" Height="385" >
         </Canvas>
     </DockPanel>
 </Window>

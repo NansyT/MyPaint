@@ -30,21 +30,39 @@ namespace MyPain
             if (e.LeftButton == MouseButtonState.Pressed)
             {
                 line.Stroke = Brushes.Black;
+                line = GetLine(line, paintArea, e);
                 
-                line.ClipToBounds = true;
-
-                line.X1 = currentPosition.X;
-                line.Y1 = currentPosition.Y;
-                line.X2 = e.GetPosition(paintArea).X;
-                line.Y2 = e.GetPosition(paintArea).Y;
-
-                currentPosition = e.GetPosition(paintArea);
-
                 return line;
             }
             return line;
         }
 
+        public Line Erase(Canvas paintArea, MouseEventArgs e)
+        {
+            Line line = new Line();
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                line.Stroke = Brushes.Transparent;
+                line = GetLine(line, paintArea, e);
+
+                return line;
+            }
+            return line;
+        }
+        //! This Probably needs a new name
+        private Line GetLine(Line line, Canvas paintArea, MouseEventArgs e)
+        {
+            line.ClipToBounds = true;
+
+            line.X1 = currentPosition.X;
+            line.Y1 = currentPosition.Y;
+            line.X2 = e.GetPosition(paintArea).X;
+            line.Y2 = e.GetPosition(paintArea).Y;
+
+            currentPosition = e.GetPosition(paintArea);
+
+            return line;
+        }
         //PolyLine attempt
         
     }
