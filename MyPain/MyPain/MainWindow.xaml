@@ -51,16 +51,7 @@
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
-                <ComboBox>
-                    <ComboBoxItem>
-                        <TextBlock Text="Lille"/>
-                    </ComboBoxItem>
-                    <ComboBoxItem>
-                        <TextBlock Text="Mellem"/>
-                    </ComboBoxItem>
-                    <ComboBoxItem>
-                        <TextBlock Text="Stor"/>
-                    </ComboBoxItem>
+                <ComboBox x:Name="brushSizeBox" SelectionChanged="BrushSizeBox_SelectionChanged" >
                 </ComboBox>
             </ToolBar>
         </ToolBarTray>

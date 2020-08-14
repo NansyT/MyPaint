@@ -21,13 +21,21 @@ namespace MyPain
     /// </summary>
     public partial class MainWindow : Window
     {
+        enum BrushSizes
+        {
+            Small = 5,
+            Meduim = 15,
+            Big = 25
+        }
         FileManager manager = new FileManager();
         public MainWindow()
-        {
+        { 
             InitializeComponent();
             paintArea.EditingMode = InkCanvasEditingMode.Ink;
             brushColours.ItemsSource = typeof(Colors).GetProperties();
             brushColours.SelectedIndex = 0;
+            brushSizeBox.ItemsSource = Enum.GetValues(typeof(BrushSizes)).Cast<BrushSizes>();
+            brushSizeBox.SelectedIndex = 0;
         }
         private void CommonCommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
@@ -53,6 +61,12 @@ namespace MyPain
         {
             Color selectedColour = (Color)(brushColours.SelectedItem as PropertyInfo).GetValue(null, null);
             paintArea.DefaultDrawingAttributes.Color = selectedColour;
+        }
+
+        private void BrushSizeBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            BrushSizes selectedBrushSize = (BrushSizes)brushSizeBox.SelectedItem;
+            paintArea.DefaultDrawingAttributes.Width = (double)selectedBrushSize;
         }
     }
 }

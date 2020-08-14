@@ -3,7 +3,8 @@
 - Add so user can change name on file
 	* Maybe do so user can change file location
 
-- More brush sizes
+X More brush sizes
+	* fix them
 
 X NEED MORE COLOURS!
 
