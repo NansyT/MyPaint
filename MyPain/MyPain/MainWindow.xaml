@@ -35,6 +35,7 @@
                     <Image Source="Pictures\Clipboard.png" Width="25"/>
                 </Button>
             </ToolBar>
+            <!---->
             <ToolBar>
                 <Button x:Name="pencilBtn" ToolTip="Pencil" Click="PencilBtn_Click" >
                     <Image Source="Pictures\Pencil.png" Width="25"/>

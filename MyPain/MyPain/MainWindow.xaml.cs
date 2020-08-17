@@ -8,6 +8,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
+using System.Windows.Ink;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -33,9 +34,9 @@ namespace MyPain
             InitializeComponent();
             paintArea.EditingMode = InkCanvasEditingMode.Ink;
             brushColours.ItemsSource = typeof(Colors).GetProperties();
-            brushColours.SelectedIndex = 0;
+            brushColours.SelectedIndex = 7;
             brushSizeBox.ItemsSource = Enum.GetValues(typeof(BrushSizes)).Cast<BrushSizes>();
-            brushSizeBox.SelectedIndex = 0;
+            brushSizeBox.SelectedIndex = 1;
         }
         private void CommonCommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
@@ -55,6 +56,7 @@ namespace MyPain
         private void EraserBtn_Click(object sender, RoutedEventArgs e)
         {
             paintArea.EditingMode = InkCanvasEditingMode.EraseByPoint;
+
         }
 
         private void BrushColours_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -67,6 +69,7 @@ namespace MyPain
         {
             BrushSizes selectedBrushSize = (BrushSizes)brushSizeBox.SelectedItem;
             paintArea.DefaultDrawingAttributes.Width = (double)selectedBrushSize;
+            paintArea.DefaultDrawingAttributes.Height = (double)selectedBrushSize;
         }
     }
 }

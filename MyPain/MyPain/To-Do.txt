@@ -4,11 +4,12 @@
 	* Maybe do so user can change file location
 
 X More brush sizes
-	* fix them
+	x fix them
 
 X NEED MORE COLOURS!
 
 - Another way to display colours
+	* It's shit right now
 
 - Make a select/marking feature
 
@@ -37,6 +38,7 @@ X NEED MORE COLOURS!
 	* It could probs do with some refacturing
 
 - Different brushes???
+	* Which???
 
 - What The Frick else can I put in this
 
@@ -58,11 +60,18 @@ X Merge test into Master so To-Do list is there
 X Look into making the background transparent
 
 X ADD AN ERASER (WHY DID I ONLY REMEMBER THIS NOW???)
+	* Maybe improve it
  
 - Sounds?
+	* Why the fuck did I want sounds????
 
 - Add resize feature?????
 
 - Maybe support more file types?
 
 - Cry because I didn't use InkCanvas sooner...
+
+X Make the brush round
+
+- Make icons for different brush types
+	* I'm aware I need more brush types first
