@@ -25,8 +25,8 @@ namespace MyPain
         enum BrushSizes
         {
             Small = 5,
-            Meduim = 15,
-            Big = 25
+            Meduim = 10,
+            Big = 15
         }
         FileManager manager = new FileManager();
         public MainWindow()
@@ -37,6 +37,7 @@ namespace MyPain
             brushColours.SelectedIndex = 7;
             brushSizeBox.ItemsSource = Enum.GetValues(typeof(BrushSizes)).Cast<BrushSizes>();
             brushSizeBox.SelectedIndex = 1;
+            paintArea.DefaultDrawingAttributes.StylusTip = StylusTip.Rectangle;
         }
         private void CommonCommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {

@@ -34,6 +34,9 @@
                 <Button x:Name="pasteBtn" Command="Paste" ToolTip="Paste from clipboard">
                     <Image Source="Pictures\Clipboard.png" Width="25"/>
                 </Button>
+                <Button x:Name="selectBtn" Command="Paste" ToolTip="Select">
+                    <Image Source="Pictures\Rotate.png" Width="25"/>
+                </Button>
             </ToolBar>
             <!---->
             <ToolBar>
