@@ -30,21 +30,20 @@ namespace MyPain
         }
         FileManager manager = new FileManager();
         public MainWindow()
-        { 
+        {
             InitializeComponent();
-            paintArea.EditingMode = InkCanvasEditingMode.Ink;
             brushColours.ItemsSource = typeof(Colors).GetProperties();
             brushColours.SelectedIndex = 7;
             brushSizeBox.ItemsSource = Enum.GetValues(typeof(BrushSizes)).Cast<BrushSizes>();
             brushSizeBox.SelectedIndex = 1;
-            paintArea.DefaultDrawingAttributes.StylusTip = StylusTip.Rectangle;
+            SetBrushSettings();
         }
         private void CommonCommandBinding_CanExecute(object sender, CanExecuteRoutedEventArgs e)
         {
             e.CanExecute = true;
         }
 
-        private void CommandBinding_Executed(object sender, ExecutedRoutedEventArgs e)
+        private void CommandBinding_Executed_Save(object sender, ExecutedRoutedEventArgs e)
         {
             manager.SaveFile(paintArea, @"C:\Users\nann8059\Desktop\MyPain Pics\newImage.png");
             MessageBox.Show("Saved file");
@@ -71,6 +70,23 @@ namespace MyPain
             BrushSizes selectedBrushSize = (BrushSizes)brushSizeBox.SelectedItem;
             paintArea.DefaultDrawingAttributes.Width = (double)selectedBrushSize;
             paintArea.DefaultDrawingAttributes.Height = (double)selectedBrushSize;
+        }
+
+        private void CommandBinding_Executed_Select(object sender, ExecutedRoutedEventArgs e)
+        {
+            paintArea.EditingMode = InkCanvasEditingMode.Select;
+        }
+
+        private void CommandBinding_Executed_New(object sender, ExecutedRoutedEventArgs e)
+        {
+            paintArea.Strokes.Clear();
+        }
+
+        private void SetBrushSettings()
+        {
+            paintArea.DefaultDrawingAttributes.StylusTip = StylusTip.Rectangle;
+            paintArea.SnapsToDevicePixels = true;
+            paintArea.DefaultDrawingAttributes.FitToCurve = true;
         }
     }
 }

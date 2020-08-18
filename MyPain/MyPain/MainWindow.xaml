@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="My Pain" Height="450" Width="800">
     <Window.CommandBindings>
-        <CommandBinding Command="New" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding Command="New" CanExecute="CommonCommandBinding_CanExecute" Executed="CommandBinding_Executed_New"/>
         <CommandBinding Command="Open" CanExecute="CommonCommandBinding_CanExecute" />
-        <CommandBinding Command="Save" CanExecute="CommonCommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+        <CommandBinding Command="Save" CanExecute="CommonCommandBinding_CanExecute" Executed="CommandBinding_Executed_Save"/>
         <CommandBinding Command="Cut" CanExecute="CommonCommandBinding_CanExecute" />
         <CommandBinding Command="Copy" CanExecute="CommonCommandBinding_CanExecute" />
         <CommandBinding Command="Paste" CanExecute="CommonCommandBinding_CanExecute" />
+        <CommandBinding Command="Select" CanExecute="CommonCommandBinding_CanExecute" Executed="CommandBinding_Executed_Select" />
     </Window.CommandBindings>
     <DockPanel>
         <ToolBarTray DockPanel.Dock="Top" IsLocked="True" >
@@ -34,7 +35,7 @@
                 <Button x:Name="pasteBtn" Command="Paste" ToolTip="Paste from clipboard">
                     <Image Source="Pictures\Clipboard.png" Width="25"/>
                 </Button>
-                <Button x:Name="selectBtn" Command="Paste" ToolTip="Select">
+                <Button x:Name="selectBtn" Command="Select" ToolTip="Select">
                     <Image Source="Pictures\Rotate.png" Width="25"/>
                 </Button>
             </ToolBar>
