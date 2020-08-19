@@ -11,7 +11,7 @@ X NEED MORE COLOURS!
 - Another way to display colours
 	* It's shit right now
 
-- Make a select/marking feature
+X Make a select/marking feature
 
 - Make the cut feature
 
@@ -19,7 +19,7 @@ X NEED MORE COLOURS!
 
 - Make the paste feature
 
-- Do so users can make new file
+X Do so users can make new file
 
 - Reevaluate my life choices
 
