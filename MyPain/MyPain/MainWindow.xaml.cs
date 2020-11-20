@@ -86,7 +86,6 @@ namespace MyPain
         {
             paintArea.DefaultDrawingAttributes.StylusTip = StylusTip.Rectangle;
             paintArea.SnapsToDevicePixels = true;
-            
         }
     }
 }

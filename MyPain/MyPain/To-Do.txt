@@ -13,11 +13,11 @@ X NEED MORE COLOURS!
 
 X Make a select/marking feature
 
-- Make the cut feature
+X Make the cut feature
 
-- Make the copy feature
+X Make the copy feature
 
-- Make the paste feature
+X Make the paste feature
 
 X Do so users can make new file
 
@@ -65,7 +65,8 @@ X ADD AN ERASER (WHY DID I ONLY REMEMBER THIS NOW???)
 - Sounds?
 	* Why the fuck did I want sounds????
 
-- Add resize feature?????
+X Add resize feature?????
+	* Can do with select
 
 - Maybe support more file types?
 

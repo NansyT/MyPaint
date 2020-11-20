@@ -24,7 +24,6 @@
                     <Image Source="Pictures\FloppyDisk.png" Width="25"/>
                 </Button>
             </ToolBar>
-            <!--These work as intended?-->
             <ToolBar>
                 <Button x:Name="cutBtn" Command="Cut" ToolTip="Cut to clipboard" >
                     <Image Source="Pictures\Scissors.png" Width="25"/>
@@ -39,7 +38,6 @@
                     <Image Source="Pictures\Rotate.png" Width="25"/>
                 </Button>
             </ToolBar>
-            <!---->
             <ToolBar>
                 <Button x:Name="pencilBtn" ToolTip="Pencil" Click="PencilBtn_Click" >
                     <Image Source="Pictures\Pencil.png" Width="25"/>
