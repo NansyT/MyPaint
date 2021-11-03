@@ -9,7 +9,7 @@ X More brush sizes
 X NEED MORE COLOURS!
 
 - Another way to display colours
-	* It's shit right now
+	* It's bad right now
 
 - Make a select/marking feature
 
@@ -21,21 +21,14 @@ X NEED MORE COLOURS!
 
 - Do so users can make new file
 
-- Reevaluate my life choices
-
 - Maybe add open file feature
 
-- Add some other interesting shit for this program
+- Add some other interesting stuff for this program
 
 - Maybe add shapes
 	* Circle
 	* Rectangle
 	* Triangle
-
-- MAKE THE FUCKING LOGO!!
-
-- Probably need to straighten up my code
-	* It could probs do with some refacturing
 
 - Different brushes???
 	* Which???
@@ -63,7 +56,7 @@ X ADD AN ERASER (WHY DID I ONLY REMEMBER THIS NOW???)
 	* Maybe improve it
  
 - Sounds?
-	* Why the fuck did I want sounds????
+	* Why did I want sounds????
 
 - Add resize feature?????
 
